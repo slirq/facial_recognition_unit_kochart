@@ -44,18 +44,18 @@ def vid():
             matches = face_recognition.compare_faces(encodeListKnown,encodeFace)
             
             #check for lowest variation
-            #faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
+            faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
             
             #check highes probability
-            faceDis = abs(1-face_recognition.face_distance(encodeListKnown,encodeFace))
+            #faceDis = abs(1-face_recognition.face_distance(encodeListKnown,encodeFace))
             
             dictionary = dict(zip(classNames, faceDis))
             print(dictionary)
             #check for lowest variation
-            #matchIndex = np.argmin(faceDis)
+            matchIndex = np.argmin(faceDis)
             
             #check for highest variation
-            matchIndex = np.argmax(faceDis)
+            #matchIndex = np.argmax(faceDis)
             if matches[matchIndex]:
                 name = classNames[matchIndex].upper()
                 print("ANSWER="+name)
@@ -82,18 +82,18 @@ def pic():
         matches = face_recognition.compare_faces(encodeListKnown,encodeFace)
         
         #check for lowest variation
-        #faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
+        faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
         
         #check highes probability
-        faceDis = abs(1-face_recognition.face_distance(encodeListKnown,encodeFace))
+        #faceDis = abs(1-face_recognition.face_distance(encodeListKnown,encodeFace))
         
         dictionary = dict(zip(classNames, faceDis))
         print(dictionary)
         #check for lowest variation
-        #matchIndex = np.argmin(faceDis)
+        matchIndex = np.argmin(faceDis)
         
         #check for highest variation
-        matchIndex = np.argmax(faceDis)
+        #matchIndex = np.argmax(faceDis)
         if matches[matchIndex]:
             name = classNames[matchIndex].upper()
             print("ANSWER="+name)
