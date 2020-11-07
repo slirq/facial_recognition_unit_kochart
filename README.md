@@ -11,3 +11,5 @@ or predefined facial recognition of your own image by placing the image in the i
 and the image to be classified into the parent directory along with the python script facial_recog_unit.py
 
 during the facial recognition process the console will log the distance between each face and output the solution.
+
+the scripts and test files folder is a dump file for prototyping this project.
