@@ -2,7 +2,7 @@
 created a facial recognition unit using opencv and facial_recognition package
 
 run the python script facial_recog_unit.py without an editor.
-
+this script predefines user faces from the imageFolder so if a new face is to be added the image of the individual should be uploaded in the folder.
 select between real time recognition using webcam (press Q to exit the webcam).
 
 or predefined facial recognition of your own image by placing the image in the image folder directory as the python script.
